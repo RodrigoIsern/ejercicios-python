@@ -7,6 +7,7 @@ en la programacion de Python en Khan Academy
 - Conceptos básicos de dibujo
 - Variables
 - Conceptos básicos de animación
+- Cambiar el tamaño con variables
 
 ## Objetivo
 Aprender programación desde cero.
