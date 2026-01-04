@@ -1,6 +1,6 @@
 # Conceptos básicos de animación
 
-* Sol
+## Sol
 
 noStroke();
 
@@ -24,7 +24,7 @@ draw = function() {
     sunSize = sunSize + 1;
 };
 
-* Sol y nuves
+## Sol y nuves
 
 noStroke();
 var leftX = 123;
@@ -55,7 +55,7 @@ draw = function() {
     sunRadius += 2;
 };
 
-* Estrella fugaz
+## Estrella fugaz
 
 // triangle
 var xPos = 71;
