@@ -1,0 +1,133 @@
+*Sol
+
+noStroke();
+
+// the starting size for the sun
+var sunSize = 30; 
+
+draw = function() {
+    
+    // the beautiful blue sky
+    background(82, 222, 240);
+    
+    
+     // The sun, a little circle on the horizon
+    fill(255, 204, 0);
+    ellipse(200, 298, sunSize, sunSize);
+    
+    // The land, blocking half of the sun
+    fill(76, 168, 67);
+    rect(0, 300, 400, 100);
+    
+    sunSize = sunSize + 1;
+};
+
+*Sol y nuves
+
+noStroke();
+var leftX = 123;
+var rightX = 284;
+var sunRadius = 100;
+
+draw = function() {
+    background(184, 236, 255);
+    
+    fill(255, 170, 0);
+    ellipse(200, 100, sunRadius, sunRadius);
+    
+    // clouds 
+    fill(255, 255, 255);
+    // left cloud
+    ellipse(leftX, 150, 126, 97);
+    ellipse(leftX+62, 150, 70, 60);
+    ellipse(leftX-62, 150, 70, 60);
+    
+    // right cloud
+    ellipse(rightX, 100, 126, 97);
+    ellipse(rightX+62, 100, 70, 60);
+    ellipse(rightX-62, 100, 70, 60);
+    
+    // move
+    leftX += -1;
+    rightX++;
+    sunRadius += 2;
+};
+
+*Estrella fugaz
+
+// triangle
+var xPos = 71;
+var yPos = 219;
+var xxPos = 13;
+var yyPos = 216;
+var xxxPos = 38;
+var yyyPos = 168;
+
+// triangle inverted
+var wxPos = 71;
+var wyPos = 187;
+var wxxPos = 15;
+var wyyPos = 186;
+var wxxxPos = 39;
+var wyyyPos = 228;
+
+noStroke ();
+
+draw = function() {
+    background(29, 40, 115);
+    fill(255, 242, 0);
+    // triangle 
+    triangle(xPos, yPos, xxPos, yyPos, xxxPos, yyyPos);
+    // triangle inverted
+    triangle(wxPos, wyPos, wxxPos, wyyPos, wxxxPos, wyyyPos);
+   
+    // triangle
+    xPos += 2;
+    yPos -= 1;
+    xxPos += 2;
+    yyPos += -1;
+    xxxPos += 2;
+    yyyPos += -1;
+    
+    // triangle inverted
+    wxPos += 2;
+    wyPos += -1;
+    wxxPos += 2;
+    wyyPos += -1;
+    wxxxPos += 2;
+    wyyyPos += -1;
+    
+//buildings
+// 2
+fill(41, 37, 37);
+rect(10, 242, 84, 160);
+fill(242, 255, 0);
+rect(25, 262, 20, 20);
+rect(25, 333, 20, 20);
+rect(57, 298, 20, 20);
+
+// 2
+fill(41, 37, 37);
+rect(144, 297, 84, 160);
+fill(242, 255, 0);
+rect(200, 311, 20, 20);
+rect(157, 362, 20, 20);
+rect(157, 313, 20, 20);
+
+// 3
+fill(41, 37, 37);
+rect(279, 279, 84, 160);
+fill(242, 255, 0);
+rect(285, 331, 20, 20);
+rect(330, 333, 20, 20);
+rect(290, 298, 20, 20);
+
+// stars
+fill(250, 247, 247);
+triangle(28, 48, 46, 10, 10, 10);
+triangle(48, 36, 14, 36, 26, -5);
+
+triangle(200, 162, 227, 160, 213, 229);
+triangle(200, 204, 227, 201, 213, 143);
+
+};
