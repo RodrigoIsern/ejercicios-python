@@ -1,6 +1,6 @@
 # Variables
 
-Conejo
+*Conejo
 
 var eyeSize = 30;
 var toothSize = 30;
@@ -20,7 +20,7 @@ noFill();
 rect(185, 200, 15, toothSize); // left tooth
 rect(200, 200, 15, toothSize); // right tooth
 
-Rana
+*Rana
 
 var x = 200;
 var y = 250;
