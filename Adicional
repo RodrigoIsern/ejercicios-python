@@ -1,0 +1,159 @@
+*Adicional
+
+## Ojos del oso
+
+noStroke();
+var x = 131;
+var y = 269;
+var faceSize = 349;
+var eyeSize = faceSize/8;
+
+// ears
+var earSize=faceSize*1/2;
+fill(89, 52, 17);
+ellipse(x-faceSize*2/5, y-faceSize*2/5, earSize, earSize);
+ellipse(x+faceSize*2/5, y-faceSize*2/5, earSize, earSize);
+
+// face
+fill(163, 113, 5);
+ellipse(x, y, faceSize, faceSize);
+
+
+
+//eyes 
+fill(0, 0, 0);
+ellipse(x-faceSize/4, y-faceSize/8, eyeSize, eyeSize);
+ellipse(x+faceSize/4, y-faceSize/8, eyeSize, eyeSize);
+
+
+
+//nose
+fill(89, 52, 20);
+ellipse(x, y+faceSize/8, faceSize*4/15, faceSize/5);
+
+## Oso
+
+var x = 200;
+var y = 220;
+var s = 200;
+var es = s/3;
+
+var draw = function() {
+if (mouseIsPressed) {
+  
+    background(207, 254, 255);
+    fill(143, 96, 3); // body
+    ellipse(x, y, s, s);
+    ellipse(x-s/4.5, y-s/1.5 , s/4, s/4); // earL
+    fill(232, 162, 203);
+    ellipse(x-s/4.5, y-s/1.5 , s/6, s/7);
+    fill(143, 96, 3); // earR
+    ellipse(x+s/4.5, y-s/1.5 , s/4, s/4);
+    fill(232, 162, 203);
+    ellipse(x+s/4.5, y-s/1.5 , s/6, s/7);
+    fill(143, 96, 3); // face
+    ellipse(x, y-s/2, s/2, s/2);
+    fill(0, 0, 0); // nose
+    ellipse(x, y-s/2.3, s/10, s/10);
+    ellipse(x-s/9, y-s/1.8, es/8, es/8); //eyes
+    ellipse(x+s/9, y-s/1.8, es/8, es/8);
+    fill(143, 96, 3); // armL
+    ellipse(x-s/2.2, y-s/5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x-s/2.2, y-s/5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x-s/2.5, y-s/2.7, s/15, s/7);
+    ellipse(x-s/2.1, y-s/2.6, s/15, s/7);
+    ellipse(x-s/1.8, y-s/2.7, s/15, s/7);
+    fill(143, 96, 3); // armR
+    ellipse(x+s/2.2, y-s/5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x+s/2.2, y-s/5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x+s/2.5, y-s/2.7, s/15, s/7);
+    ellipse(x+s/2.1, y-s/2.6, s/15, s/7);
+    ellipse(x+s/1.8, y-s/2.7, s/15, s/7);
+    fill(255, 200, 0);
+    fill(143, 96, 3); // legL
+    ellipse(x-s/2.2, y+s/2.5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x-s/2.2, y+s/2.5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x-s/2.5, y+s/4.5, s/15, s/7);
+    ellipse(x-s/2.1, y+s/4.6, s/15, s/7);
+    ellipse(x-s/1.8, y+s/4.5, s/15, s/7);
+    fill(143, 96, 3); // legR
+    ellipse(x+s/2.2, y+s/2.5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x+s/2.2, y+s/2.5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x+s/2.5, y+s/4.5, s/15, s/7);
+    ellipse(x+s/2.1, y+s/4.6, s/15, s/7);
+    ellipse(x+s/1.8, y+s/4.5, s/15, s/7);
+    fill(255, 200, 0); // belly
+    ellipse(x, y+s/5, s/2, s/1.7);
+
+    fill(0, 0, 0); //eyes
+    ellipse(x-s/9, y-200/1.8, s/8, s/8); //eyes
+    ellipse(x+s/9, y-200/1.8, s/8, s/8);
+    es = es+2;
+} else {
+    
+var x = 200;
+var y = 220;
+var s = 200;
+var es = s/4;
+
+    background(207, 254, 255);
+    fill(143, 96, 3); // body
+    ellipse(x, y, s, s);
+    ellipse(x-s/4.5, y-s/1.5 , s/4, s/4); // earR
+    fill(232, 162, 203);
+    ellipse(x-s/4.5, y-s/1.5 , s/6, s/7);
+    fill(143, 96, 3); // earL
+    ellipse(x+s/4.5, y-s/1.5 , s/4, s/4);
+    fill(232, 162, 203);
+    ellipse(x+s/4.5, y-s/1.5 , s/6, s/7);
+    fill(143, 96, 3); // face
+    ellipse(x, y-s/2, s/2, s/2);
+    fill(0, 0, 0); // nose
+    ellipse(x, y-s/2.3, s/10, s/10);
+    ellipse(x-s/9, y-s/1.8, s/8, s/8); //eyes
+    ellipse(x+s/9, y-s/1.8, s/8, s/8);
+    fill(143, 96, 3); // armL
+    ellipse(x-s/2.2, y-s/5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x-s/2.2, y-s/5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x-s/2.5, y-s/2.7, s/15, s/7);
+    ellipse(x-s/2.1, y-s/2.6, s/15, s/7);
+    ellipse(x-s/1.8, y-s/2.7, s/15, s/7);
+    fill(143, 96, 3); // armR
+    ellipse(x+s/2.2, y-s/5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x+s/2.2, y-s/5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x+s/2.5, y-s/2.7, s/15, s/7);
+    ellipse(x+s/2.1, y-s/2.6, s/15, s/7);
+    ellipse(x+s/1.8, y-s/2.7, s/15, s/7);
+    fill(255, 200, 0);
+    fill(143, 96, 3); // legL
+    ellipse(x-s/2.2, y+s/2.5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x-s/2.2, y+s/2.5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x-s/2.5, y+s/4.5, s/15, s/7);
+    ellipse(x-s/2.1, y+s/4.6, s/15, s/7);
+    ellipse(x-s/1.8, y+s/4.5, s/15, s/7);
+    fill(143, 96, 3); // legR
+    ellipse(x+s/2.2, y+s/2.5, s/3, s/3);
+    fill(255, 170, 0);
+    ellipse(x+s/2.2, y+s/2.5, s/5, s/8);
+    fill(255, 255, 255);
+    ellipse(x+s/2.5, y+s/4.5, s/15, s/7);
+    ellipse(x+s/2.1, y+s/4.6, s/15, s/7);
+    ellipse(x+s/1.8, y+s/4.5, s/15, s/7);
+    fill(255, 200, 0); // belly
+    ellipse(x, y+s/5, s/2, s/1.7);
+}
+};
