@@ -1,0 +1,28 @@
+* Texto y cadenas
+
+## Lista de comida
+
+fill(24, 168, 86);
+textSize(25);
+text("*My Favorite Foods", 30, 40);
+
+fill(163, 80, 80);
+textSize(15);
+text("1.Cannelloni", 45, 70);
+text("2.Pizza", 45, 90);
+text("3.Paella", 45, 110);
+
+## Rastrear el ratón
+
+fill(255, 0, 255);
+
+draw = function() {
+    background(255, 255, 255);
+    var X = mouseX;
+    var Y = mouseY;
+    var cord = X + "," + Y;
+    textSize(20);
+    text(cord, mouseX+10, mouseY);
+    ellipse(mouseX, mouseY, 12, 12);
+    
+};
