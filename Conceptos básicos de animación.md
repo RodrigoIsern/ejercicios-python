@@ -13,7 +13,7 @@
     background(82, 222, 240);
     
     
-     // The sun, a little circle on the horizon
+    // The sun, a little circle on the horizon
     fill(255, 204, 0);
     ellipse(200, 298, sunSize, sunSize);
     
