@@ -1,4 +1,4 @@
-* Texto y cadenas
+# Texto y cadenas
 
 ## Lista de comida
 
