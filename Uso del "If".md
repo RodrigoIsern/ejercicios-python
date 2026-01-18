@@ -1,6 +1,6 @@
 # Uso del "If"
 
-## Bounce
+## Rebotar
 
     // position
     var y = 0;
@@ -19,7 +19,7 @@
         if (y<25) {speed +=2;}
     };
 
-## Paint
+## Pintar
 
     draw = function() {
         noStroke();
@@ -30,7 +30,7 @@
         }
     };
 
-## Analysis
+## Análisis
 
     var theNumber = 0;
     
@@ -55,7 +55,7 @@
     rect(5, 160, 220, 40); 
     }
 
-## Buttom
+## Boton
 
     draw = function() {
         fill(0, 255, 68); // start color
@@ -71,7 +71,7 @@
         text("Press me!", 145, 115); 
     };
 
-## Button 2
+## Boton 2
 
     draw = function() {
         fill(0, 255, 68); // start color
@@ -87,7 +87,7 @@
         text("PRESS ME!", 93, 193);
     };
 
-## Card
+## Tarjeta
 
     draw = function() {
         background(165, 219, 162);
@@ -105,7 +105,7 @@
         text("What programming language is this?", 39, 200);
     }
     };
-## Magic Ball
+## Bola magica
 
     fill(0, 0, 0);
     ellipse(200, 200, 375, 375);
