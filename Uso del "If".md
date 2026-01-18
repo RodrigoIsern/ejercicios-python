@@ -105,7 +105,7 @@
         text("What programming language is this?", 39, 200);
     }
     };
-## Bola magica
+## Bola mágica
 
     fill(0, 0, 0);
     ellipse(200, 200, 375, 375);
